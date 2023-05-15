@@ -1,0 +1,10 @@
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ pwd
+/home/shafkat-lpc/Desktop/Tasks
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ cd /
+shafkat-lpc@shafkat-LPC:/$ pwd
+/
+shafkat-lpc@shafkat-LPC:/$ ls -a
+.   bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   shafkat3  srv       sys        tmp  var
+..  boot  dev    home  lib32  libx32  media       opt  root  sbin  snap      swapfile  timeshift  usr
+shafkat-lpc@shafkat-LPC:/$ 
+

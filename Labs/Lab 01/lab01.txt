@@ -1,0 +1,462 @@
+hp@ub80103-5379:~$ uname
+Linux
+hp@ub80103-5379:~$ whoami
+hp
+hp@ub80103-5379:~$ who am i
+hp@ub80103-5379:~$ who
+ubuntu1  :0           2023-01-29 07:54 (:0)
+hp       :1           2023-01-29 08:15 (:1)
+hp@ub80103-5379:~$ pwd
+/home/hp
+hp@ub80103-5379:~$ who are u
+hp@ub80103-5379:~$ touch file1.txt file2.txt
+hp@ub80103-5379:~$ cat>file3.txt
+Hello World
+CSE321
+hp@ub80103-5379:~$ mkdir new
+hp@ub80103-5379:~$ mkdir new\ folder
+hp@ub80103-5379:~$ cd new
+hp@ub80103-5379:~/new$ pwd
+/home/hp/new
+hp@ub80103-5379:~/new$ cd..
+cd..: command not found
+hp@ub80103-5379:~/new$ ls
+hp@ub80103-5379:~/new$ pwd
+/home/hp/new
+hp@ub80103-5379:~/new$ cd ..
+hp@ub80103-5379:~$ ls
+ 18101548_1.txt                           Music         sample.txt
+ 18101548_2.txt                           Nabil         snap
+ 18101548_4.txt                           nano.save     task1
+' Amin'                                   new           task1.c
+ Desktop                                 'new folder'   task1.txt
+ Documents                                Niloy         task2
+ Downloads                                Niloy1        task2.c
+ file1.txt                                Niloy2        Templates
+ file2.txt                                Niloy3        test
+ file3.txt                                Pictures      Videos
+ google-chrome-stable_current_amd64.deb   Public
+ lab                                     'sample 2'
+hp@ub80103-5379:~$ tourch file.txt
+
+Command 'tourch' not found, did you mean:
+
+  command 'touch' from deb coreutils (8.30-3ubuntu2)
+
+Try: sudo apt install <deb name>
+
+hp@ub80103-5379:~$ touch file.txt
+hp@ub80103-5379:~$ cp file.txt new
+hp@ub80103-5379:~$ mkdir new2
+hp@ub80103-5379:~$ cp -r new2 new
+hp@ub80103-5379:~$ cd new
+hp@ub80103-5379:~/new$ ls
+file.txt  new2
+hp@ub80103-5379:~/new$ cd ..
+hp@ub80103-5379:~$ rm file.txt
+hp@ub80103-5379:~$ rm new2
+rm: cannot remove 'new2': Is a directory
+hp@ub80103-5379:~$ ls
+ 18101548_1.txt                           Music        'sample 2'
+ 18101548_2.txt                           Nabil         sample.txt
+ 18101548_4.txt                           nano.save     snap
+' Amin'                                   new           task1
+ Desktop                                  new2          task1.c
+ Documents                               'new folder'   task1.txt
+ Downloads                                Niloy         task2
+ file1.txt                                Niloy1        task2.c
+ file2.txt                                Niloy2        Templates
+ file3.txt                                Niloy3        test
+ google-chrome-stable_current_amd64.deb   Pictures      Videos
+ lab                                      Public
+hp@ub80103-5379:~$ rm -r new2
+hp@ub80103-5379:~$ ls
+ 18101548_1.txt                           Music         sample.txt
+ 18101548_2.txt                           Nabil         snap
+ 18101548_4.txt                           nano.save     task1
+' Amin'                                   new           task1.c
+ Desktop                                 'new folder'   task1.txt
+ Documents                                Niloy         task2
+ Downloads                                Niloy1        task2.c
+ file1.txt                                Niloy2        Templates
+ file2.txt                                Niloy3        test
+ file3.txt                                Pictures      Videos
+ google-chrome-stable_current_amd64.deb   Public
+ lab                                     'sample 2'
+hp@ub80103-5379:~$ ls -l
+total 91652
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:29  18101548_1.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:29  18101548_2.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      28 15:22  18101548_4.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      28 16:13 ' Amin'
+drwxr-xr-x 3 hp   hp       4096 নভেম্বর   29 14:47  Desktop
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Documents
+drwxr-xr-x 3 hp   hp       4096 জানু      29 08:32  Downloads
+-rw-rw-r-- 1 hp   hp          0 জানু      29 08:53  file1.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      29 08:53  file2.txt
+-rw-rw-r-- 1 hp   hp         19 জানু      29 08:54  file3.txt
+-rw-rw-r-- 1 hp   hp   93693916 জানু      24 03:18  google-chrome-stable_current_amd64.deb
+drwxrwxr-x 2 hp   hp       4096 নভেম্বর   29 12:44  lab
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Music
+drwxrwxr-x 3 hp   hp       4096 জানু      28 16:13  Nabil
+-rw------- 1 root root        2 মার্চ     23  2022  nano.save
+drwxrwxr-x 3 hp   hp       4096 জানু      29 09:10  new
+drwxrwxr-x 2 hp   hp       4096 জানু      29 08:58 'new folder'
+drwxrwxr-x 4 hp   hp       4096 জানু      28 15:19  Niloy
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:25  Niloy1
+drwxrwxr-x 4 hp   hp       4096 জানু      28 15:30  Niloy2
+drwxrwxr-x 3 hp   hp       4096 জানু      28 15:38  Niloy3
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Pictures
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Public
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:14 'sample 2'
+-rwxrw-r-- 1 hp   hp          4 নভেম্বর   22 11:56  sample.txt
+drwx------ 4 hp   hp       4096 জানু      28 15:36  snap
+-rwxrwxr-x 1 hp   hp      16888 নভেম্বর   22 12:30  task1
+-rw-rw-r-- 1 hp   hp        353 নভেম্বর   22 12:19  task1.c
+-rwxrwxrwx 1 hp   hp          0 নভেম্বর   22 12:03  task1.txt
+-rwxrwxr-x 1 hp   hp      16840 নভেম্বর   22 12:35  task2
+-rw-rw-r-- 1 hp   hp        534 নভেম্বর   22 12:35  task2.c
+drwxr-xr-x 4 hp   hp       4096 জানু      28 15:13  Templates
+-rw-rw-r-- 1 hp   hp         37 জানু      28 14:50  test
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Videos
+hp@ub80103-5379:~$ touch 19101077_1.txt 19101077_2.txt 19101077_3.txt 19101077_4.txt 
+hp@ub80103-5379:~$ mkdir shafkat1 shafkat2
+hp@ub80103-5379:~$ cp 19101077_1.txt 19101077_2.txt shafkat2
+hp@ub80103-5379:~$ mkdir shafkat3
+hp@ub80103-5379:~$ mv 19101077_1.txt 19101077_2.txt 19101077_3.txt  shafkat1
+hp@ub80103-5379:~$ cp shafkat1 shafkat2
+cp: -r not specified; omitting directory 'shafkat1'
+hp@ub80103-5379:~$ cp -r shafkat1 shafkat2
+hp@ub80103-5379:~$ cd shafkat2
+hp@ub80103-5379:~/shafkat2$ rm -r shafkat1
+hp@ub80103-5379:~/shafkat2$ cd ..
+hp@ub80103-5379:~$ cp shafkat1 shafkat3
+cp: -r not specified; omitting directory 'shafkat1'
+hp@ub80103-5379:~$ cp -r shafkat1 shafkat2
+hp@ub80103-5379:~$ cp -r shafkat1 shafkat3
+hp@ub80103-5379:~$ cd shafkat2
+hp@ub80103-5379:~/shafkat2$ rm -r shafkat1
+hp@ub80103-5379:~/shafkat2$ cd ..
+hp@ub80103-5379:~$ ls -a
+ .                                       'new folder'
+ ..                                       Niloy
+ 18101548_1.txt                           Niloy1
+ 18101548_2.txt                           Niloy2
+ 18101548_4.txt                           Niloy3
+ 19101077_4.txt                           Pictures
+' Amin'                                   .pki
+ .bash_history                            .profile
+ .bash_logout                             Public
+ .bashrc                                 'sample 2'
+ .cache                                   sample.txt
+ .config                                  shafkat1
+ Desktop                                  shafkat2
+ Documents                                shafkat3
+ Downloads                                snap
+ file1.txt                                .ssh
+ file2.txt                                .sudo_as_admin_successful
+ file3.txt                                task1
+ .gnupg                                   task1.c
+ google-chrome-stable_current_amd64.deb   task1.txt
+ lab                                      task2
+ .local                                   task2.c
+ .mozilla                                 Templates
+ Music                                    test
+ Nabil                                    Videos
+ nano.save                                .vscode
+ new
+hp@ub80103-5379:~$ ls -A
+ 18101548_1.txt                           Niloy
+ 18101548_2.txt                           Niloy1
+ 18101548_4.txt                           Niloy2
+ 19101077_4.txt                           Niloy3
+' Amin'                                   Pictures
+ .bash_history                            .pki
+ .bash_logout                             .profile
+ .bashrc                                  Public
+ .cache                                  'sample 2'
+ .config                                  sample.txt
+ Desktop                                  shafkat1
+ Documents                                shafkat2
+ Downloads                                shafkat3
+ file1.txt                                snap
+ file2.txt                                .ssh
+ file3.txt                                .sudo_as_admin_successful
+ .gnupg                                   task1
+ google-chrome-stable_current_amd64.deb   task1.c
+ lab                                      task1.txt
+ .local                                   task2
+ .mozilla                                 task2.c
+ Music                                    Templates
+ Nabil                                    test
+ nano.save                                Videos
+ new                                      .vscode
+'new folder'
+hp@ub80103-5379:~$ ls -l
+total 91664
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:29  18101548_1.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:29  18101548_2.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      28 15:22  18101548_4.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      29 09:21  19101077_4.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      28 16:13 ' Amin'
+drwxr-xr-x 3 hp   hp       4096 নভেম্বর   29 14:47  Desktop
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Documents
+drwxr-xr-x 3 hp   hp       4096 জানু      29 08:32  Downloads
+-rw-rw-r-- 1 hp   hp          0 জানু      29 08:53  file1.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      29 08:53  file2.txt
+-rw-rw-r-- 1 hp   hp         19 জানু      29 08:54  file3.txt
+-rw-rw-r-- 1 hp   hp   93693916 জানু      24 03:18  google-chrome-stable_current_amd64.deb
+drwxrwxr-x 2 hp   hp       4096 নভেম্বর   29 12:44  lab
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Music
+drwxrwxr-x 3 hp   hp       4096 জানু      28 16:13  Nabil
+-rw------- 1 root root        2 মার্চ     23  2022  nano.save
+drwxrwxr-x 3 hp   hp       4096 জানু      29 09:10  new
+drwxrwxr-x 2 hp   hp       4096 জানু      29 08:58 'new folder'
+drwxrwxr-x 4 hp   hp       4096 জানু      28 15:19  Niloy
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:25  Niloy1
+drwxrwxr-x 4 hp   hp       4096 জানু      28 15:30  Niloy2
+drwxrwxr-x 3 hp   hp       4096 জানু      28 15:38  Niloy3
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Pictures
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Public
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:14 'sample 2'
+-rwxrw-r-- 1 hp   hp          4 নভেম্বর   22 11:56  sample.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      29 09:26  shafkat1
+drwxrwxr-x 2 hp   hp       4096 জানু      29 09:32  shafkat2
+drwxrwxr-x 3 hp   hp       4096 জানু      29 09:31  shafkat3
+drwx------ 4 hp   hp       4096 জানু      28 15:36  snap
+-rwxrwxr-x 1 hp   hp      16888 নভেম্বর   22 12:30  task1
+-rw-rw-r-- 1 hp   hp        353 নভেম্বর   22 12:19  task1.c
+-rwxrwxrwx 1 hp   hp          0 নভেম্বর   22 12:03  task1.txt
+-rwxrwxr-x 1 hp   hp      16840 নভেম্বর   22 12:35  task2
+-rw-rw-r-- 1 hp   hp        534 নভেম্বর   22 12:35  task2.c
+drwxr-xr-x 4 hp   hp       4096 জানু      28 15:13  Templates
+-rw-rw-r-- 1 hp   hp         37 জানু      28 14:50  test
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Videos
+hp@ub80103-5379:~$ chmod o+x file3.txt
+hp@ub80103-5379:~$ ls -l
+total 91664
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:29  18101548_1.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:29  18101548_2.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      28 15:22  18101548_4.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      29 09:21  19101077_4.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      28 16:13 ' Amin'
+drwxr-xr-x 3 hp   hp       4096 নভেম্বর   29 14:47  Desktop
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Documents
+drwxr-xr-x 3 hp   hp       4096 জানু      29 08:32  Downloads
+-rw-rw-r-- 1 hp   hp          0 জানু      29 08:53  file1.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      29 08:53  file2.txt
+-rw-rw-r-x 1 hp   hp         19 জানু      29 08:54  file3.txt
+-rw-rw-r-- 1 hp   hp   93693916 জানু      24 03:18  google-chrome-stable_current_amd64.deb
+drwxrwxr-x 2 hp   hp       4096 নভেম্বর   29 12:44  lab
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Music
+drwxrwxr-x 3 hp   hp       4096 জানু      28 16:13  Nabil
+-rw------- 1 root root        2 মার্চ     23  2022  nano.save
+drwxrwxr-x 3 hp   hp       4096 জানু      29 09:10  new
+drwxrwxr-x 2 hp   hp       4096 জানু      29 08:58 'new folder'
+drwxrwxr-x 4 hp   hp       4096 জানু      28 15:19  Niloy
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:25  Niloy1
+drwxrwxr-x 4 hp   hp       4096 জানু      28 15:30  Niloy2
+drwxrwxr-x 3 hp   hp       4096 জানু      28 15:38  Niloy3
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Pictures
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Public
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:14 'sample 2'
+-rwxrw-r-- 1 hp   hp          4 নভেম্বর   22 11:56  sample.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      29 09:26  shafkat1
+drwxrwxr-x 2 hp   hp       4096 জানু      29 09:32  shafkat2
+drwxrwxr-x 3 hp   hp       4096 জানু      29 09:31  shafkat3
+drwx------ 4 hp   hp       4096 জানু      28 15:36  snap
+-rwxrwxr-x 1 hp   hp      16888 নভেম্বর   22 12:30  task1
+-rw-rw-r-- 1 hp   hp        353 নভেম্বর   22 12:19  task1.c
+-rwxrwxrwx 1 hp   hp          0 নভেম্বর   22 12:03  task1.txt
+-rwxrwxr-x 1 hp   hp      16840 নভেম্বর   22 12:35  task2
+-rw-rw-r-- 1 hp   hp        534 নভেম্বর   22 12:35  task2.c
+drwxr-xr-x 4 hp   hp       4096 জানু      28 15:13  Templates
+-rw-rw-r-- 1 hp   hp         37 জানু      28 14:50  test
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Videos
+hp@ub80103-5379:~$ chmod o-x file3.txt
+hp@ub80103-5379:~$ ls -l
+total 91664
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:29  18101548_1.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:29  18101548_2.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      28 15:22  18101548_4.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      29 09:21  19101077_4.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      28 16:13 ' Amin'
+drwxr-xr-x 3 hp   hp       4096 নভেম্বর   29 14:47  Desktop
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Documents
+drwxr-xr-x 3 hp   hp       4096 জানু      29 08:32  Downloads
+-rw-rw-r-- 1 hp   hp          0 জানু      29 08:53  file1.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      29 08:53  file2.txt
+-rw-rw-r-- 1 hp   hp         19 জানু      29 08:54  file3.txt
+-rw-rw-r-- 1 hp   hp   93693916 জানু      24 03:18  google-chrome-stable_current_amd64.deb
+drwxrwxr-x 2 hp   hp       4096 নভেম্বর   29 12:44  lab
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Music
+drwxrwxr-x 3 hp   hp       4096 জানু      28 16:13  Nabil
+-rw------- 1 root root        2 মার্চ     23  2022  nano.save
+drwxrwxr-x 3 hp   hp       4096 জানু      29 09:10  new
+drwxrwxr-x 2 hp   hp       4096 জানু      29 08:58 'new folder'
+drwxrwxr-x 4 hp   hp       4096 জানু      28 15:19  Niloy
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:25  Niloy1
+drwxrwxr-x 4 hp   hp       4096 জানু      28 15:30  Niloy2
+drwxrwxr-x 3 hp   hp       4096 জানু      28 15:38  Niloy3
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Pictures
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Public
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:14 'sample 2'
+-rwxrw-r-- 1 hp   hp          4 নভেম্বর   22 11:56  sample.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      29 09:26  shafkat1
+drwxrwxr-x 2 hp   hp       4096 জানু      29 09:32  shafkat2
+drwxrwxr-x 3 hp   hp       4096 জানু      29 09:31  shafkat3
+drwx------ 4 hp   hp       4096 জানু      28 15:36  snap
+-rwxrwxr-x 1 hp   hp      16888 নভেম্বর   22 12:30  task1
+-rw-rw-r-- 1 hp   hp        353 নভেম্বর   22 12:19  task1.c
+-rwxrwxrwx 1 hp   hp          0 নভেম্বর   22 12:03  task1.txt
+-rwxrwxr-x 1 hp   hp      16840 নভেম্বর   22 12:35  task2
+-rw-rw-r-- 1 hp   hp        534 নভেম্বর   22 12:35  task2.c
+drwxr-xr-x 4 hp   hp       4096 জানু      28 15:13  Templates
+-rw-rw-r-- 1 hp   hp         37 জানু      28 14:50  test
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Videos
+hp@ub80103-5379:~$ chmod 463 file3.txt
+hp@ub80103-5379:~$ ls -l
+total 91664
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:29  18101548_1.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:29  18101548_2.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      28 15:22  18101548_4.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      29 09:21  19101077_4.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      28 16:13 ' Amin'
+drwxr-xr-x 3 hp   hp       4096 নভেম্বর   29 14:47  Desktop
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Documents
+drwxr-xr-x 3 hp   hp       4096 জানু      29 08:32  Downloads
+-rw-rw-r-- 1 hp   hp          0 জানু      29 08:53  file1.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      29 08:53  file2.txt
+-r--rw--wx 1 hp   hp         19 জানু      29 08:54  file3.txt
+-rw-rw-r-- 1 hp   hp   93693916 জানু      24 03:18  google-chrome-stable_current_amd64.deb
+drwxrwxr-x 2 hp   hp       4096 নভেম্বর   29 12:44  lab
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Music
+drwxrwxr-x 3 hp   hp       4096 জানু      28 16:13  Nabil
+-rw------- 1 root root        2 মার্চ     23  2022  nano.save
+drwxrwxr-x 3 hp   hp       4096 জানু      29 09:10  new
+drwxrwxr-x 2 hp   hp       4096 জানু      29 08:58 'new folder'
+drwxrwxr-x 4 hp   hp       4096 জানু      28 15:19  Niloy
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:25  Niloy1
+drwxrwxr-x 4 hp   hp       4096 জানু      28 15:30  Niloy2
+drwxrwxr-x 3 hp   hp       4096 জানু      28 15:38  Niloy3
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Pictures
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Public
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:14 'sample 2'
+-rwxrw-r-- 1 hp   hp          4 নভেম্বর   22 11:56  sample.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      29 09:26  shafkat1
+drwxrwxr-x 2 hp   hp       4096 জানু      29 09:32  shafkat2
+drwxrwxr-x 3 hp   hp       4096 জানু      29 09:31  shafkat3
+drwx------ 4 hp   hp       4096 জানু      28 15:36  snap
+-rwxrwxr-x 1 hp   hp      16888 নভেম্বর   22 12:30  task1
+-rw-rw-r-- 1 hp   hp        353 নভেম্বর   22 12:19  task1.c
+-rwxrwxrwx 1 hp   hp          0 নভেম্বর   22 12:03  task1.txt
+-rwxrwxr-x 1 hp   hp      16840 নভেম্বর   22 12:35  task2
+-rw-rw-r-- 1 hp   hp        534 নভেম্বর   22 12:35  task2.c
+drwxr-xr-x 4 hp   hp       4096 জানু      28 15:13  Templates
+-rw-rw-r-- 1 hp   hp         37 জানু      28 14:50  test
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Videos
+hp@ub80103-5379:~$ chmod u+w63 file3.txt
+chmod: invalid mode: ‘u+w63’
+Try 'chmod --help' for more information.
+hp@ub80103-5379:~$ chmod u+w 63 file3.txt
+chmod: cannot access '63': No such file or directory
+hp@ub80103-5379:~$ chmod u+w file3.txt
+hp@ub80103-5379:~$ chmod u+ 63 file3.txt
+chmod: cannot access '63': No such file or directory
+hp@ub80103-5379:~$ chmod u+63 file3.txt
+chmod: invalid mode: ‘u+63’
+Try 'chmod --help' for more information.
+hp@ub80103-5379:~$ chmod u+3 file3.txt
+chmod: invalid mode: ‘u+3’
+Try 'chmod --help' for more information.
+hp@ub80103-5379:~$ chmod u+w file3.txt
+hp@ub80103-5379:~$ ls -l
+total 91664
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:29  18101548_1.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:29  18101548_2.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      28 15:22  18101548_4.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      29 09:21  19101077_4.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      28 16:13 ' Amin'
+drwxr-xr-x 3 hp   hp       4096 নভেম্বর   29 14:47  Desktop
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Documents
+drwxr-xr-x 3 hp   hp       4096 জানু      29 08:32  Downloads
+-rw-rw-r-- 1 hp   hp          0 জানু      29 08:53  file1.txt
+-rw-rw-r-- 1 hp   hp          0 জানু      29 08:53  file2.txt
+-rw-rw--wx 1 hp   hp         19 জানু      29 08:54  file3.txt
+-rw-rw-r-- 1 hp   hp   93693916 জানু      24 03:18  google-chrome-stable_current_amd64.deb
+drwxrwxr-x 2 hp   hp       4096 নভেম্বর   29 12:44  lab
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Music
+drwxrwxr-x 3 hp   hp       4096 জানু      28 16:13  Nabil
+-rw------- 1 root root        2 মার্চ     23  2022  nano.save
+drwxrwxr-x 3 hp   hp       4096 জানু      29 09:10  new
+drwxrwxr-x 2 hp   hp       4096 জানু      29 08:58 'new folder'
+drwxrwxr-x 4 hp   hp       4096 জানু      28 15:19  Niloy
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:25  Niloy1
+drwxrwxr-x 4 hp   hp       4096 জানু      28 15:30  Niloy2
+drwxrwxr-x 3 hp   hp       4096 জানু      28 15:38  Niloy3
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Pictures
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Public
+drwxrwxr-x 2 hp   hp       4096 জানু      28 15:14 'sample 2'
+-rwxrw-r-- 1 hp   hp          4 নভেম্বর   22 11:56  sample.txt
+drwxrwxr-x 2 hp   hp       4096 জানু      29 09:26  shafkat1
+drwxrwxr-x 2 hp   hp       4096 জানু      29 09:32  shafkat2
+drwxrwxr-x 3 hp   hp       4096 জানু      29 09:31  shafkat3
+drwx------ 4 hp   hp       4096 জানু      28 15:36  snap
+-rwxrwxr-x 1 hp   hp      16888 নভেম্বর   22 12:30  task1
+-rw-rw-r-- 1 hp   hp        353 নভেম্বর   22 12:19  task1.c
+-rwxrwxrwx 1 hp   hp          0 নভেম্বর   22 12:03  task1.txt
+-rwxrwxr-x 1 hp   hp      16840 নভেম্বর   22 12:35  task2
+-rw-rw-r-- 1 hp   hp        534 নভেম্বর   22 12:35  task2.c
+drwxr-xr-x 4 hp   hp       4096 জানু      28 15:13  Templates
+-rw-rw-r-- 1 hp   hp         37 জানু      28 14:50  test
+drwxr-xr-x 2 hp   hp       4096 মার্চ     24  2022  Videos
+hp@ub80103-5379:~$ cal
+   জানুয়ারী 2023     
+রব সো মঙ  বু  বৃ  শু শন  বৃ  শু শন  শু শন শন  
+ 1  2  3  4  5  6  7  
+ 8  9 10 11 12 13 14  
+15 16 17 18 19 20 21  
+22 23 24 25 26 27 28  
+29 30 31              
+                      
+hp@ub80103-5379:~$ cal 2022
+                            2022
+     জানুয়ারী            ফেব্রুয়ারী              মার্চ          
+রব সো মঙ  বু  বৃ  শু শন  বৃ  শু শন  শু শন শন  রব সো মঙ  বু  বৃ  শু শন  বৃ  শু শন  শু শন শন  রব সো মঙ  বু  বৃ  শু শন  বৃ  শু শন  শু শন শন  
+                   1         1  2  3  4  5         1  2  3  4  5  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   6  7  8  9 10 11 12  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  13 14 15 16 17 18 19  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  20 21 22 23 24 25 26  
+23 24 25 26 27 28 29  27 28                 27 28 29 30 31        
+30 31                                                             
+
+       এপ্রিল                  মে                   জুন           
+রব সো মঙ  বু  বৃ  শু শন  বৃ  শু শন  শু শন শন  রব সো মঙ  বু  বৃ  শু শন  বৃ  শু শন  শু শন শন  রব সো মঙ  বু  বৃ  শু শন  বৃ  শু শন  শু শন শন  
+                1  2   1  2  3  4  5  6  7            1  2  3  4  
+ 3  4  5  6  7  8  9   8  9 10 11 12 13 14   5  6  7  8  9 10 11  
+10 11 12 13 14 15 16  15 16 17 18 19 20 21  12 13 14 15 16 17 18  
+17 18 19 20 21 22 23  22 23 24 25 26 27 28  19 20 21 22 23 24 25  
+24 25 26 27 28 29 30  29 30 31              26 27 28 29 30        
+                                                                  
+
+       জুলাই                 আগস্ট               সেপ্টেম্বর       
+রব সো মঙ  বু  বৃ  শু শন  বৃ  শু শন  শু শন শন  রব সো মঙ  বু  বৃ  শু শন  বৃ  শু শন  শু শন শন  রব সো মঙ  বু  বৃ  শু শন  বৃ  শু শন  শু শন শন  
+                1  2      1  2  3  4  5  6               1  2  3  
+ 3  4  5  6  7  8  9   7  8  9 10 11 12 13   4  5  6  7  8  9 10  
+10 11 12 13 14 15 16  14 15 16 17 18 19 20  11 12 13 14 15 16 17  
+17 18 19 20 21 22 23  21 22 23 24 25 26 27  18 19 20 21 22 23 24  
+24 25 26 27 28 29 30  28 29 30 31           25 26 27 28 29 30     
+31                                                                
+
+      অক্টোবর               নভেম্বর               ডিসেম্বর        
+রব সো মঙ  বু  বৃ  শু শন  বৃ  শু শন  শু শন শন  রব সো মঙ  বু  বৃ  শু শন  বৃ  শু শন  শু শন শন  রব সো মঙ  বু  বৃ  শু শন  বৃ  শু শন  শু শন শন  
+                   1         1  2  3  4  5               1  2  3  
+ 2  3  4  5  6  7  8   6  7  8  9 10 11 12   4  5  6  7  8  9 10  
+ 9 10 11 12 13 14 15  13 14 15 16 17 18 19  11 12 13 14 15 16 17  
+16 17 18 19 20 21 22  20 21 22 23 24 25 26  18 19 20 21 22 23 24  
+23 24 25 26 27 28 29  27 28 29 30           25 26 27 28 29 30 31  
+30 31                                                             
+hp@ub80103-5379:~$ man cp
+hp@ub80103-5379:~$ ^C
+hp@ub80103-5379:~$ 
+

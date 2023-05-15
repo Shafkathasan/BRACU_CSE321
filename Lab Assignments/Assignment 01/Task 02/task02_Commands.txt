@@ -1,0 +1,442 @@
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gedit task02(a).c
+bash: syntax error near unexpected token `('
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gedit T02a.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2a T02a.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2a
+Input first number: 5.5
+Input second number: 5.5
+Subtraction: 5.500
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2a
+Input first number: 9
+Input second number: 3
+Subtraction: 3.000
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2a T02a.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2a
+Input first number: 9
+Input second number: 3
+Subtraction: 3.000
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2a T02a.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2a
+Input first number: 6
+Input second number: 9
+Addition: 15.000
+
+Do you want to run the program again? (y/n): n
+
+Thank you for using the program!
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2a T02a.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2a
+Input first number: 9
+Input second number: 3
+Subtraction: 6.000
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2a T02a.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2a
+Input first number: 9
+Input second number: 3
+Subtraction: 6.000
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2a T02a.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2a
+Input first number: 9
+Input second number: 3
+Subtraction: 6.000
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2a
+Input first number: 3
+Input second number: 9
+Addition: 12.000
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2a T02a.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2a
+Input first number: 9
+Input second number: 3
+Subtraction: 6.000
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2a
+Input first number: 3
+Input second number: 6
+Addition: 9.000
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2a
+Input first number: 5.5
+Input second number: 5.5
+Multiplication: 30.250
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gedit T02b.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+T02b.c: In function ‘main’:
+T02b.c:29:5: warning: ‘__builtin_puts’ reading 1 or more bytes from a region of size 0 [-Wstringop-overread]
+   29 |     printf("%s\n", str);
+      |     ^~~~~~~~~~~~~~~~~~~
+T02b.c:24:10: note: source object ‘str’ of size 0
+   24 |     char str[] = {};
+      |          ^~~
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+T02b.c: In function ‘main’:
+T02b.c:30:5: warning: ‘__builtin_puts’ reading 1 or more bytes from a region of size 0 [-Wstringop-overread]
+   30 |     printf("%s\n", str);
+      |     ^~~~~~~~~~~~~~~~~~~
+T02b.c:25:10: note: source object ‘str’ of size 0
+   25 |     char str[] = {};
+      |          ^~~
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+T02b.c: In function ‘main’:
+T02b.c:25:10: error: array size missing in ‘str’
+   25 |     char str[];
+      |          ^~~
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+T02b.c: In function ‘main’:
+T02b.c:30:5: warning: ‘__builtin_puts’ reading 1 or more bytes from a region of size 0 [-Wstringop-overread]
+   30 |     printf("%s\n", str);
+      |     ^~~~~~~~~~~~~~~~~~~
+T02b.c:25:10: note: source object ‘str’ of size 0
+   25 |     char str[] = {};
+      |          ^~~
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+T02b.c: In function ‘main’:
+T02b.c:30:5: warning: ‘__builtin_puts’ reading 1 or more bytes from a region of size 0 [-Wstringop-overread]
+   30 |     printf("%s\n", str);
+      |     ^~~~~~~~~~~~~~~~~~~
+T02b.c:25:10: note: source object ‘str’ of size 0
+   25 |     char str[] = {};
+      |          ^~~
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+T02b.c: In function ‘main’:
+T02b.c:31:5: warning: ‘__builtin_puts’ reading 1 or more bytes from a region of size 0 [-Wstringop-overread]
+   31 |     printf("%s\n", str);
+      |     ^~~~~~~~~~~~~~~~~~~
+T02b.c:26:10: note: source object ‘str’ of size 0
+   26 |     char str[] = {};
+      |          ^~~
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2a T02a.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2a
+Input first number: 6
+Input second number: 3
+Subtraction: 3.000
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2b
+Enter a sentence with extra spaces: I   love  pyyhon      prog
+Segmentation fault (core dumped)
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ^C
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2b
+Enter a sentence: I    love   python
+I love python
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+T02b.c: In function ‘main’:
+T02b.c:25:10: error: array size missing in ‘str’
+   25 |     char str[];
+      |          ^~~
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2b
+Enter a sentence: I    lvoe asdjad       asjd
+Segmentation fault (core dumped)
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2b
+Enter a sentence: asdad             aksdjaskjkdas          asjdak
+asdad aksdjaskjkdas asjdak
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+T02b.c: In function ‘main’:
+T02b.c:30:5: warning: ‘__builtin_puts’ reading 1 or more bytes from a region of size 0 [-Wstringop-overread]
+   30 |     printf("%s\n", str);
+      |     ^~~~~~~~~~~~~~~~~~~
+T02b.c:25:10: note: source object ‘str’ of size 0
+   25 |     char str[ ] = {};
+      |          ^~~
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2b
+Enter a sentence:         ajsdasd      jasdjasjd
+Segmentation fault (core dumped)
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2b
+Enter a sentence:       I        love       pyhton
+ I love pyhton
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2b
+Enter a sentence with extra spaces:   ldldsld  lsdfsdlf             dlfslfls
+The sentence without extra spaces:  ldldsld lsdfsdlf dlfslfls
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2b
+Enter a sentence with extra spaces: dfgdfgdfg hh
+The sentence without extra spaces: dfgdfgdfg hh
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2b
+Enter a sentence with extra spaces:                      jhjkh 
+The sentence without extra spaces:  jhjkh 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2b
+Enter a sentence with extra spaces:
+askdaksd         asdkasd    askdad
+The sentence without extra spaces:
+ askdaksd asdkasd askdad
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2b
+Enter a sentence with extra spaces:
+dajdhashjd       kasd 
+The sentence without extra spaces:
+dajdhashjd kasd 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gedit T02c.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gedit T02b.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2c T02c.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: BR@CUspring
+Digit missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: bracuspring
+Uppercase character missing
+Digit missing
+Special character missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: BR@CU20sping22
+OK
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2c T02c.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: BRACU
+Lowercase character missing
+Digit missing
+Special character missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: bracu@spring
+Uppercase character missing
+Digit missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: BR@CU20spring22
+OK
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2c T02c.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: BRACU
+Lowercase character missing
+Digit missing
+Special character missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2c T02c.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: Bracu
+Digit missing
+Special character missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ BRad@jsada13
+BRad@jsada13: command not found
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: BRAC@sadj22
+OK
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: Bra@ja22
+OK
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: BRad@jsada13dfdsfdsffsfsfsf
+OK
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: hsadh@3333askdkNFNFkdfsdfsksfiiifsdifsdifsifjsdjfsf;;fjjgosogdfg
+OK
+*** stack smashing detected ***: terminated
+Aborted (core dumped)
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: hsadh@3333askdkNFNFkdfsdfsksfiiifsdifsdifsifjsdjfsf;;fjjgosogdfg
+OK
+*** stack smashing detected ***: terminated
+Aborted (core dumped)
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2c T02c.c
+T02c.c: In function ‘main’:
+T02c.c:38:39: error: expected ‘;’ before ‘return’
+   38 |     } else printf ("Password to Long")
+      |                                       ^
+      |                                       ;
+   39 | 
+   40 |     return 0;
+      |     ~~~~~~                             
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2c T02c.c
+T02c.c: In function ‘main’:
+T02c.c:38:39: error: expected ‘;’ before ‘return’
+   38 |     } else printf ("Password to Long")
+      |                                       ^
+      |                                       ;
+   39 | 
+   40 |     return 0;
+      |     ~~~~~~                             
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2c T02c.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: akdakdj^[[A
+Digit missing
+Special character missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2c T02c.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: ajdhadhad       ksdjkajd
+Segmentation fault (core dumped)
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: BRACU
+Segmentation fault (core dumped)
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2c T02c.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: BRACU
+Lowercase character missing
+Digit missing
+Special character missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: BR@CU20spring22
+OK
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: bracuspring
+Uppercase character missing
+Digit missing
+Special character missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2c T02c.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password:  ajsdhadhads 
+Uppercase character missing
+Digit missing
+Special character missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: aksdask kadsa
+Uppercase character missing
+Digit missing
+Special character missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: BRac@334jdddjsKDNFNSDFLSNFldsfsdfskfsfncxcxkkx  kskfsddkfsd
+OK
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: BRAC@saida
+Digit missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: brasdasdin
+Uppercase character missing
+Digit missing
+Special character missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: BRA@cse^[[A^[[B
+Digit missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: jasdasj jasdah
+Uppercase character missing
+Digit missing
+Special character missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2c T02c.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: jdhadda adkajd
+Uppercase character missing
+Digit missing
+Special character missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2c T02c.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gedit T02d.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2d T02d.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2d
+Enter email address: fard@kaj.com
+Email address is outdated.
+*** stack smashing detected ***: terminated
+Aborted (core dumped)
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2d T02d.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2d
+Enter an email address: zaki@bra.xyz    
+The email is updated.
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2d
+Enter an email address: fahmid@kaaj.com
+The email is not updated.
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2d T02d.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2d
+Enter an email address: dsjfdsj@asja.xyz
+The email is updated.
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2d T02d.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2d
+Enter an email address: zaki@bra.xyz   
+The email address needs to be updated: zaki@bra.xyz
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2d
+Enter an email address: fahmid@kaaj.com
+The email address is updated: fahmid@sheba.xyz
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2d T02d.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2d
+Enter an email address: zaki@bra.xyz
+The email address is outated: zaki@bra.xyz
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2d T02d.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2d
+Enter an email address: zaki@bra.xyz
+The email address is outated
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2d
+Enter an email address: zaki@she.xyz        
+The email address is outated
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2d
+Enter an email address: asd@sheba.xyz       
+The email address is okay
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2d
+Enter an email address: fahmid@kaaj.com
+The email address is outated
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2d T02d.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2d
+Enter an email address: asd
+The email address is outated
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2d T02d.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2d T02d.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2d T02d.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2d T02d.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gedit T02e.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2e T02e.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2e T02e.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2e
+Enter a sentence: AABBAAA
+Not Palindrome
+*** stack smashing detected ***: terminated
+Aborted (core dumped)
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2e T02e.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2e
+Enter a string: AAABBAAA
+Palindrome
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2e
+Enter a string: AABBABA
+Not Palindrome
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ aabcbaa
+aabcbaa: command not found
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2e
+Enter a string: aabcbaa
+Palindrome
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2e T02e.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2e
+Enter a string: bbaacaabb
+Palindrome
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2a T02a.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2a
+Input first number: 9 
+Input second number: 9
+Multiplication: 81.000
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2a
+Input first number: 9 
+Input second number: 8
+Subtraction: 1.000
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2a
+Input first number: 8
+Input second number: 9
+Addition: 17.000
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2b
+Enter a sentence with extra spaces:
+kdsfksd    sdfksdf skdfjsf  
+The sentence without extra spaces:
+kdsfksd sdfksdf skdfjsf 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2c T02c.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: BR@spring
+Digit missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: braskdak
+Uppercase character missing
+Digit missing
+Special character missing
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2c
+Enter your new password: BRA@nasbb22
+OK
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2d T02d.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2d
+Enter an email address: fasadska@kaaj.com
+The email address is outated
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2d
+Enter an email address: hhdh@sheba.xyz
+The email address is okay
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2e T02e.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2d
+Enter an email address: asdaddadsa
+The email address is outated
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2e
+Enter a string: asdaddadsa
+Palindrome
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./t2e
+Enter a string: asdadasdadad
+Not Palindrome
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2e T02e.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2d T02d.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2c T02c.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2b T02b.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o t2a T02a.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ 
+
+

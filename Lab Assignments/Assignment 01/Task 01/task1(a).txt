@@ -1,0 +1,78 @@
+shafkat-lpc@shafkat-LPC:~$ uname
+Linux
+shafkat-lpc@shafkat-LPC:~$ whoami
+shafkat-lpc
+shafkat-lpc@shafkat-LPC:~$ who
+shafkat-lpc tty2         2023-02-19 15:58 (tty2)
+shafkat-lpc@shafkat-LPC:~$ pwd
+/home/shafkat-lpc
+shafkat-lpc@shafkat-LPC:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+shafkat-lpc@shafkat-LPC:~$ cd Desktop
+shafkat-lpc@shafkat-LPC:~/Desktop$ ls
+Tasks
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ touch 19101077_1.txt 19101077_2.txt 19101077_3.txt 19101077_4.txt 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+19101077_1.txt  19101077_2.txt  19101077_3.txt  19101077_4.txt
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ mkdir shafkat1 shafkat2
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+19101077_1.txt  19101077_2.txt  19101077_3.txt  19101077_4.txt  shafkat1  shafkat2
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ mv 19101077_1.txt 19101077_2.txt 19101077_3.txt  shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+19101077_4.txt  shafkat1  shafkat2
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ cd shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat1$ pwd
+/home/shafkat-lpc/Desktop/Tasks/shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat1$ cp 19101077_1.txt 19101077_2.txt ~/Desktop/Tasks/shafkat2
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat1$ cd ..
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ mkdir shafkat3
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+19101077_4.txt  shafkat1  shafkat2  shafkat3
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ cp -r shafkat1 shafkat3
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ cd shafkat3
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ ls -a
+.  ..  shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ ls -all
+total 12
+drwxrwxr-x 3 shafkat-lpc shafkat-lpc 4096 Feb 19 17:15 .
+drwxrwxr-x 5 shafkat-lpc shafkat-lpc 4096 Feb 19 17:13 ..
+drwxrwxr-x 2 shafkat-lpc shafkat-lpc 4096 Feb 19 17:15 shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ ls -A
+shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ ls -all
+total 12
+drwxrwxr-x 3 shafkat-lpc shafkat-lpc 4096 Feb 19 17:15 .
+drwxrwxr-x 5 shafkat-lpc shafkat-lpc 4096 Feb 19 17:13 ..
+drwxrwxr-x 2 shafkat-lpc shafkat-lpc 4096 Feb 19 17:15 shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ ls -l
+total 4
+drwxrwxr-x 2 shafkat-lpc shafkat-lpc 4096 Feb 19 17:15 shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ chmod 755 shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ ls -l
+total 4
+drwxr-xr-x 2 shafkat-lpc shafkat-lpc 4096 Feb 19 17:15 shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ cd ..
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+19101077_4.txt  shafkat1  shafkat2  shafkat3
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls -a
+.  ..  19101077_4.txt  shafkat1  shafkat2  shafkat3
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ sudo mv shafkat3 /
+[sudo] password for shafkat-lpc: 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls -a
+.  ..  19101077_4.txt  shafkat1  shafkat2
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ cd /
+shafkat-lpc@shafkat-LPC:/$ ls -a
+.   bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   shafkat3  srv       sys        tmp  var
+..  boot  dev    home  lib32  libx32  media       opt  root  sbin  snap      swapfile  timeshift  usr
+shafkat-lpc@shafkat-LPC:/$ cd ~
+shafkat-lpc@shafkat-LPC:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+shafkat-lpc@shafkat-LPC:~$ cd Desktop/Tasks
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls -a
+.  ..  19101077_4.txt  shafkat1  shafkat2
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ rm -r *
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls -a
+.  ..
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ 
+

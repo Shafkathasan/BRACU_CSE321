@@ -1,0 +1,229 @@
+//Assignment-02: System Call Tasks
+//Task01
+#include <stdio.h> #include <stdlib.h> #include <string.h>
+Write a c program that will open a file given from the command line argument and then it will
+ask the user to input strings which will be written to that file. It will continue to ask the user to
+enter a string as long as the user enters “-1”. If the given file does not exist in the directory, then
+your program will automatically create the file.
+All code should be Unix compatible.
+// main function
+int main(int argc, char *argv[]) {
+    FILE *fp;
+    char filename[100], str[100];
+    // Check if filename was provided as command line argument
+    if (argc < 2) {
+        printf("Please provide a filename as command line argument.\n");
+        exit(1);
+    }
+    // Get filename from command line argument
+    strcpy(filename, argv[1]);
+
+    // Open file in write mode
+    fp = fopen(filename, "w");
+
+    // Check if file was opened successfully
+    if (fp == NULL) {
+        printf("Unable to open file %s.\n", filename);
+        exit(1);
+    }
+    // Ask user to input strings
+    printf("Enter a string to write to file (enter '-1' to quit):\n");
+    scanf("%s", str);
+
+    while (strcmp(str, "-1") != 0) {
+        // Write string to file
+        fprintf(fp, "%s\n", str);
+        // Ask user for another string
+        printf("Enter another string (enter '-1' to quit):\n");
+        scanf("%s", str);
+    }
+    // Close file
+    fclose(fp);
+    printf("File %s has been written to.\n", filename);
+    return 0;
+}
+/* Bash sample commands:
+# Compile task01.c
+gcc -o t01 task01.c
+# Run sort.c with filename as command line arguments
+./t01 filename
+*/
+//Task02
+#include <stdio.h> #include <stdlib.h> #include <unistd.h> #include <sys/wait.h>
+Write a program that will create a child and another grandchild process. Every process will print
+a line.
+Parent process will print, “I am parent”
+Child process will print, “I am child”
+Grandchild process will print, “I am grandchild”
+Now, write the program in such way so that the following output will be shown -
+I am grandchild
+I am child
+I am parent
+int main() {
+    // create child process
+    pid_t child_pid = fork();
+    if (child_pid == 0) {
+        // child process
+        pid_t grandchild_pid = fork();
+        if (grandchild_pid == 0) {
+            // grandchild process
+            printf("I am grandchild\n");
+        } else {
+            // child process
+            wait(NULL);
+            printf("I am child\n");
+        }
+    } else {
+        // parent process
+        wait(NULL);
+        printf("I am parent\n");
+    }
+    return 0;
+}
+//Task03
+#include <stdio.h> #include <unistd.h> #include <sys/wait.h>
+Consider the following code snippet in your main function -
+a = fork();
+b = fork();
+c = fork();
+Now, write the full program, that will check the children’s PID for odd or even and if it is odd then the process
+will create another child process. Lastly, print how many processes have been created
+considering the first parent process.
+int main() {
+    int a, b, c;
+    int process_count = 1; // initialize process count to 1 for the first parent process
+    a = fork();
+    b = fork();
+    c = fork();
+    if (a == 0) {
+        // child process a
+        if (getpid() % 2 != 0) {
+            // PID is odd, create another child process
+            fork();
+            process_count++;
+        }
+    } else if (b == 0) {
+        // child process b
+        if (getpid() % 2 != 0) {
+            // PID is odd, create another child process
+            fork();
+            process_count++;
+        }
+    } else if (c == 0) {
+        // child process c
+        if (getpid() % 2 != 0) {
+            // PID is odd, create another child process
+            fork();
+            process_count++;
+        }
+    } else {
+        // parent process
+        process_count += 3; // add 3 for the child processes created by fork()
+        printf("Total number of processes created: %d\n", process_count);
+    }
+
+    return 0;
+}
+//Task04
+#include <stdio.h> #include <stdlib.h> #include <unistd.h> #include <sys/wait.h>
+Write a program that will create a child process and the child process will first
+sort the array that you have declared in this program. And then, the parent process will print the
+odd/even status for each number in the array.
+int compare(const void * a, const void * b) {
+    return (*(int*)b - *(int*)a);
+}
+int main(int argc, char *argv[]) {
+    int arr[argc-1];
+    for(int i=0; i<argc-1; i++) {
+        arr[i] = atoi(argv[i+1]);
+    }
+    int n = argc-1;
+    pid_t pid = fork();
+    if(pid == 0) {
+        // Child process
+        qsort(arr, n, sizeof(int), compare);
+        printf("Sorted array in descending order: ");
+        for(int i=0; i<n; i++) {
+            printf("%d ", arr[i]);
+        }
+        printf("\n");
+    } else {
+        // Parent process
+        wait(NULL);
+        printf("Odd/Even status of the numbers: ");
+        for(int i=0; i<n; i++) {
+            int num = arr[i];
+            if(num % 2 == 0) {
+                printf("Even ");
+            } else {
+                printf("Odd ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+/* Bash sample commands:
+# Compile sort.c
+gcc -o sort sort.c
+# Run sort.c with some numbers as command line arguments
+./sort 5 2 8 1 6
+# Compile oddeven.c
+gcc -o oddeven oddeven.c
+# Run oddeven.c with some numbers as command line arguments
+./oddeven 5 2 8 1 6
+# Compile parent_child.c
+gcc -o parent_child parent_child.c
+# Run parent_child.c with some numbers as command line arguments
+./parent_child 5 2 8 1 6
+*/
+//Task05
+#include <stdio.h> #include <unistd.h> #include <sys/types.h>
+Write a program in c that the parent process will create one child process and 3 grandchild
+processes and print their IDs
+Output: 1. Parent process ID : 0
+2. Child process ID : ...
+3. Grand Child process ID: ...
+4. Grand Child process ID: ...
+5. Grand Child process ID: ...
+int main() {
+    pid_t pid, child_pid, grandchild_pid1, grandchild_pid2, grandchild_pid3;
+    pid = getpid(); // Get parent process ID
+    printf("1. Parent process ID: %d\n", pid);
+    // Create child process
+    child_pid = fork();
+    if (child_pid == 0) { // Child process
+        pid = getpid(); // Get child process ID
+        printf("2. Child process ID: %d\n", pid);
+
+        // Create three grandchild processes
+        grandchild_pid1 = fork();
+
+        if (grandchild_pid1 == 0) { // Grandchild process 1
+            pid = getpid(); // Get grandchild process ID
+            printf("3. Grandchild process ID: %d\n", pid);
+            return 0;
+        }
+
+        grandchild_pid2 = fork();
+
+        if (grandchild_pid2 == 0) { // Grandchild process 2
+            pid = getpid(); // Get grandchild process ID
+            printf("4. Grandchild process ID: %d\n", pid);
+            return 0;
+        }
+
+        grandchild_pid3 = fork();
+
+        if (grandchild_pid3 == 0) { // Grandchild process 3
+            pid = getpid(); // Get grandchild process ID
+            printf("5. Grandchild process ID: %d\n", pid);
+            return 0;
+        }
+
+        return 0;
+    }
+
+    return 0;
+}

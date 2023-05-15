@@ -1,0 +1,20 @@
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ pwd
+/home/shafkat-lpc/Desktop/Tasks
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+a.txt
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ sed -n -e 5,17p a.txt
+The dog barked at the mailman as he walked by.
+He spent hours reading books in the library.
+The city skyline looked stunning at night.
+The children giggled as they played in the park.
+I can't believe it's already February.
+She's an excellent cook and her food always tastes delicious.
+The flowers in the garden are starting to bloom.
+The train arrived at the station right on time.
+The movie we watched last night was really entertaining.
+The snow was so deep that it covered the entire car.
+The band played their hit song to a packed stadium.
+The store was out of stock of the item I was looking for.
+The old man sat quietly on the bench, watching the world go by.
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ 
+

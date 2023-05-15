@@ -1,0 +1,110 @@
+//Assignment-02: Threading Tasks
+//Task01
+#include <stdio.h> #include <stdlib.h> 
+#include <pthread.h> #include <unistd.h>
+Write a c program that creates 5 threads and prints which thread is running and after the thread is closed, a new thread starts its execution. Each thread should run sequentially one by one.
+#define NUM_THREADS 5
+// Thread function
+void* thread_func(void* arg) {
+    int thread_num = *((int*) arg);
+    printf("thread-%d running\n", thread_num);
+    printf("thread-%d closed\n", thread_num);
+    return NULL;
+}
+// Main function
+int main() {
+    pthread_t threads[NUM_THREADS];
+    int thread_nums[NUM_THREADS];
+
+    for (int i = 0; i < NUM_THREADS; i++) {
+        thread_nums[i] = i + 1;
+        pthread_create(&threads[i], NULL, thread_func, (void*) &thread_nums[i]);
+        pthread_join(threads[i], NULL);
+    }
+
+    return 0;
+}
+//Task02
+Write a program in c using 5 threads where each thread will print 5 integers
+The outputs will look like this:
+Thread 1: 1 2 3 4 5
+Thread 2: 6 7 8 9 10
+Thread 3: 11 12 13 14 15
+Thread 4: 16 17 18 19 20
+Thread 5: 21 22 23 24 25
+void *thread_function(void *arg)
+{
+    int *id = (int *)arg;
+    for (int i = 0; i < 5; i++)
+    {
+        if (*id == 1) {
+            printf("Thread %d prints %d\n", *id, i + 1);
+        } else if (*id == 2 {
+            printf("Thread %d prints %d\n", *id, i + 6);
+        } else if (*id == 3) {
+            printf("Thread %d prints %d\n", *id, i + 11);
+        } else if (*id == 4) {
+            printf("Thread %d prints %d\n", *id, i + 16);
+        } else if (*id == 5) {
+            printf("Thread %d prints %d\n", *id, i + 21);
+        }
+    }
+    pthread_exit(NULL);
+}
+int main()
+{
+    pthread_t thread_id[5];
+    int i;
+    int *id;
+    for (i = 0; i < 5; i++) {
+        id = (int *)malloc(sizeof(int));
+        *id = i + 1;
+        pthread_create(&thread_id[i], NULL, thread_function, id);
+        pthread_join(thread_id[i], NULL);
+    }
+    return 0;
+}
+//Task03
+Write a program in c that has a function that takes the name of the user and adds all the ASCII value of the characters and returns it. Now create 3 threads that run the function using 3 different user names. Now print “Youreka” if all the returned values are equal, print “Miracle” if any 2 returned values are equal and print “Hasta la vista” if the values don’t match using another thread.
+// function to add all the ASCII values of the characters
+void *count_ascii(void *arg)
+{
+    char *name = (char *)arg;
+    int i = 0, sum = 0;
+    int *result = (int *)malloc(sizeof(int));
+    while (name[i] != '\0') {
+        sum += name[i];
+        // printf("%c", name[i]);
+        // printf("%d", sum);
+        i++;
+    }
+    // prinnf("%s: %d\n", name, sum);
+    *result = sum;
+    return result;
+}
+int main()
+{
+    pthread_t t1, t2, t3;
+    char *name1 = "Iftekhar";
+    char *name2 = "Hossain";
+    char *name3 = "Turja";
+    int *result1, *result2, *result3;
+
+    // create 3 threads to run the function
+    pthread_create(&t1, NULL, count_ascii, (void *)name1);
+    pthread_join(t1, (void **)&result1);
+    pthread_create(&t2, NULL, count_ascii, (void *)name2);
+    pthread_join(t2, (void **)&result2);
+    pthread_create(&t3, NULL, count_ascii, (void *)name3);
+    pthread_join(t3, (void **)&result3);
+
+    // compare the results and print the appropriate message
+    if (*result1 == *result2 && *result1 == *result3)  {
+        printf("Youreka\n");
+    } else if (*result1 == *result2 || *result1 == *result3 || *result2 == *result3) {
+        printf("Miracle\n");
+    } else {
+        printf("Hasta la vista\n");
+    }
+    return 0;
+}

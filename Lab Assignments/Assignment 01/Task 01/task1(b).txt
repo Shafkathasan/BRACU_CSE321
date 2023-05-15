@@ -1,0 +1,25 @@
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ pwd
+/home/shafkat-lpc/Desktop/Tasks
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ cat course.txt
+cat: course.txt: No such file or directory
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ cat > course.txt
+Course ID:
+ANT101, CSE321, CSE421
+
+Course Name:
+1. INTRODUCTION TO ANTHROPOLOGY
+2. OPERATING SYSTEMS
+3. COMPUTER NETWORKS
+
+Section: ANT101[07], CSE321[04], CSE421[02]
+^Z
+[3]+  Stopped                 cat > course.txt
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ grap -n 'CSE' course.txt
+Command 'grap' not found, but can be installed with:
+sudo apt install grap
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ grep -n 'CSE' course.txt
+2:ANT101, CSE321, CSE421
+9:Section: ANT101[07], CSE321[04], CSE421[02]
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ 
+

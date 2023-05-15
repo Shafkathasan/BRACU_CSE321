@@ -1,0 +1,236 @@
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gedit LabT03.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+LabT03.c: In function ‘main’:
+LabT03.c:7:16: error: expected ‘;’ before ‘for’
+    7 |  scanf("%d",&n)
+      |                ^
+      |                ;
+    8 | 
+    9 |  for(i=1, i<n; i++) {
+      |  ~~~            
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+LabT03.c: In function ‘main’:
+LabT03.c:9:19: error: expected ‘;’ before ‘)’ token
+    9 |  for(i=1, i<n; i++) {
+      |                   ^
+      |                   ;
+LabT03.c:10:10: error: lvalue required as left operand of assignment
+   10 |   if (i%2=0) sum = sum + i;
+      |          ^
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+LabT03.c: In function ‘main’:
+LabT03.c:10:10: error: lvalue required as left operand of assignment
+   10 |   if (i%2=0) sum = sum + i;
+      |          ^
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt03
+Input number : 10
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+LabT03.c: In function ‘main’:
+LabT03.c:13:40: error: expected ‘;’ before ‘}’ token
+   13 |  printf("Sum of even number : %d", sum)
+      |                                        ^
+      |                                        ;
+   14 | }
+      | ~                                       
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+LabT03.c: In function ‘main’:
+LabT03.c:13:40: error: expected ‘;’ before ‘}’ token
+   13 |  printf("Sum of even number : %d", sum)
+      |                                        ^
+      |                                        ;
+   14 | }
+      | ~                                       
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt03
+Input number : 10
+Sum of even number : 32785hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./ltgcc -o lt03 LabT03.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt03
+Input number : 3
+Sum of even number : 32769 
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt03
+Input number : 3
+Sum of all even number between 1 to 3 = 2hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt03
+Input number : 5
+Sum of all even number between 1 to 5 = 6 
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt03
+Input number : 5
+Sum of all even number between 1 to 5 = 32771 
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt03
+Input number : 5
+Sum of all even number between 1 to 5 = 6 
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt03
+Input number : 5
+Sum of all even number between 1 to 5 = 6 
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt03
+Input number : 6
+3276732769327693277332773Sum of all even number between 1 to 6 = 32773 
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt03
+Input number : 6
+32767
+32769
+32769
+32773
+32773
+Sum of all even number between 1 to 6 = 32773 
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt03
+Input number : 6
+Sum of all even number between 1 to 6 = 32770 
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt03
+Input number : 6
+Sum of all even number between 1 to 6 = 6 
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt03 LabT03.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt03
+Input number : 6
+Sum of all even number between 1 to 6 = 12 
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gedit LabT04.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt04 LabT04.c
+gcc: error: LabT04.c: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt04 LabT04.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt04
+Before swapping the values in main a = 10, b = 20
+After swapping values in function a = 20, b = 10
+After swapping values in main a = 10, b = 20
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt04 LabT04.c
+LabT04.c:13:6: error: conflicting types for ‘swap’
+   13 | void swap (int a, int b)
+      |      ^~~~
+LabT04.c:2:6: note: previous declaration of ‘swap’ was here
+    2 | void swap(int *a, int *b);
+      |      ^~~~
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt04 LabT04.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt04
+Before swapping the values a = 10, b = 20
+After swapping values a = 20, b = 10
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt04 LabT04.c
+LabT04.c: In function ‘main’:
+LabT04.c:9:65: error: expected ‘]’ before ‘)’ token
+    9 |     printf("After swapping values a = %d, b = %d\n",arr[0],arr[1);
+      |                                                                 ^
+      |                                                                 ]
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt04 LabT04.c
+LabT04.c: In function ‘main’:
+LabT04.c:6:16: error: expected expression before ‘[’ token
+    6 |     int arr[]= [10, 20];
+      |                ^
+LabT04.c:9:65: error: expected ‘]’ before ‘)’ token
+    9 |     printf("After swapping values a = %d, b = %d\n",arr[0],arr[1);
+      |                                                                 ^
+      |                                                                 ]
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt04 LabT04.c
+LabT04.c: In function ‘main’:
+LabT04.c:6:16: error: expected expression before ‘[’ token
+    6 |     int arr[]= [10, 20];
+      |                ^
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt04 LabT04.c
+LabT04.c: In function ‘main’:
+LabT04.c:6:16: error: invalid initializer
+    6 |     int arr[]= (10, 20);
+      |                ^
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt04 LabT04.c
+LabT04.c: In function ‘main’:
+LabT04.c:6:17: error: expected expression before ‘[’ token
+    6 |     int arr[2]= [10, 20];
+      |                 ^
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt04 LabT04.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt04
+Before swapping the values a = 10, b = 20
+After swapping values a = 20, b = 10
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt04 LabT04.c
+LabT04.c: In function ‘main’:
+LabT04.c:10:13: warning: passing argument 1 of ‘swap’ makes pointer from integer without a cast [-Wint-conversion]
+   10 |     swap(arr[0],arr[1]);
+      |          ~~~^~~
+      |             |
+      |             int
+LabT04.c:2:16: note: expected ‘int *’ but argument is of type ‘int’
+    2 | void swap(int *a, int *b);
+      |           ~~~~~^
+LabT04.c:10:20: warning: passing argument 2 of ‘swap’ makes pointer from integer without a cast [-Wint-conversion]
+   10 |     swap(arr[0],arr[1]);
+      |                 ~~~^~~
+      |                    |
+      |                    int
+LabT04.c:2:24: note: expected ‘int *’ but argument is of type ‘int’
+    2 | void swap(int *a, int *b);
+      |                   ~~~~~^
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o lt04 LabT04.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./lt04
+Before swapping the values a = 10, b = 20
+After swapping values a = 20, b = 10
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gedit File_IO.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o flo File_IO.c
+File_IO.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    3 | main()
+      | ^~~~
+File_IO.c: In function ‘main’:
+File_IO.c:9:8: warning: passing argument 1 of ‘fputs’ from incompatible pointer type [-Wincompatible-pointer-types]
+    9 |  fputs(fp, "This is testing for fputs.../n");
+      |        ^~
+      |        |
+      |        FILE * {aka struct _IO_FILE *}
+In file included from File_IO.c:1:
+/usr/include/stdio.h:626:42: note: expected ‘const char * restrict’ but argument is of type ‘FILE *’ {aka ‘struct _IO_FILE *’}
+  626 | extern int fputs (const char *__restrict __s, FILE *__restrict __stream);
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~^~~
+File_IO.c:9:12: warning: passing argument 2 of ‘fputs’ from incompatible pointer type [-Wincompatible-pointer-types]
+    9 |  fputs(fp, "This is testing for fputs.../n");
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |            |
+      |            char *
+In file included from File_IO.c:1:
+/usr/include/stdio.h:626:64: note: expected ‘FILE * restrict’ {aka ‘struct _IO_FILE * restrict’} but argument is of type ‘char *’
+  626 | extern int fputs (const char *__restrict __s, FILE *__restrict __stream);
+      |                                               ~~~~~~~~~~~~~~~~~^~~~~~~~
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o flo File_IO.c
+File_IO.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    3 | main()
+      | ^~~~
+File_IO.c: In function ‘main’:
+File_IO.c:9:8: warning: passing argument 1 of ‘fputs’ from incompatible pointer type [-Wincompatible-pointer-types]
+    9 |  fputs(fp, "This is testing for fputs.../n");
+      |        ^~
+      |        |
+      |        FILE * {aka struct _IO_FILE *}
+In file included from File_IO.c:1:
+/usr/include/stdio.h:626:42: note: expected ‘const char * restrict’ but argument is of type ‘FILE *’ {aka ‘struct _IO_FILE *’}
+  626 | extern int fputs (const char *__restrict __s, FILE *__restrict __stream);
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~^~~
+File_IO.c:9:12: warning: passing argument 2 of ‘fputs’ from incompatible pointer type [-Wincompatible-pointer-types]
+    9 |  fputs(fp, "This is testing for fputs.../n");
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |            |
+      |            char *
+In file included from File_IO.c:1:
+/usr/include/stdio.h:626:64: note: expected ‘FILE * restrict’ {aka ‘struct _IO_FILE * restrict’} but argument is of type ‘char *’
+  626 | extern int fputs (const char *__restrict __s, FILE *__restrict __stream);
+      |                                               ~~~~~~~~~~~~~~~~~^~~~~~~~
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o flo File_IO.c
+File_IO.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    3 | main()
+      | ^~~~
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o flo File_IO.c
+File_IO.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    3 | main()
+      | ^~~~
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o flo File_IO.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./flo
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o flo File_IO.c
+File_IO.c:3:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    3 | main()
+      | ^~~~
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ gcc -o flo File_IO.c
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ ./flo
+hp@ub80103-5379:~/Downloads/19101077_Labs/Lab 03$ 
+

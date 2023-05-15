@@ -1,0 +1,409 @@
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc hw hello.c
+cc1: fatal error: hello.c: No such file or directory
+compilation terminated.
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o hw hello.c
+cc1: fatal error: hello.c: No such file or directory
+compilation terminated.
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ^C
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ sudo apt update
+[sudo] password for shafkat-lpc: 
+Hit:1 https://dl.google.com/linux/chrome/deb stable InRelease
+Ign:2 https://repo.vivaldi.com/stable/deb stable InRelease                     
+Hit:3 http://bd.archive.ubuntu.com/ubuntu jammy InRelease                      
+Hit:4 https://repo.vivaldi.com/stable/deb stable Release                       
+Hit:5 http://bd.archive.ubuntu.com/ubuntu jammy-updates InRelease              
+Hit:7 http://bd.archive.ubuntu.com/ubuntu jammy-backports InRelease            
+Hit:8 http://security.ubuntu.com/ubuntu jammy-security InRelease               
+Hit:9 https://ppa.launchpadcontent.net/flatpak/stable/ubuntu jammy InRelease   
+Hit:10 https://ppa.launchpadcontent.net/gerardpuig/ppa/ubuntu jammy InRelease
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+21 packages can be upgraded. Run 'apt list --upgradable' to see them.
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ touch hello.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o hw hello.c
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+hello.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o hello hello.c
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gedit
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+hello.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gedit hello.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o hw hello.c
+hello.c:1:2: error: invalid preprocessing directive #inchude; did you mean #include?
+    1 | #inchude <stdio.h>
+      |  ^~~~~~~
+      |  include
+hello.c: In function ‘main’:
+hello.c:4:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    4 |         printf("Hello, World!");
+      |         ^~~~~~
+hello.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | #inchude <stdio.h>
+hello.c:4:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    4 |         printf("Hello, World!");
+      |         ^~~~~~
+hello.c:4:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gedit hello.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o hw hello.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./hw
+Hello, World!shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gedit hello.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o hello hello.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./hello
+Hello, World!
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+hello  hello.c  hw
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ rw hello hello.c hw
+rw: command not found
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ rm hello hello.c hw
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ pw
+pw: command not found
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ pwd
+/home/shafkat-lpc/Desktop/Tasks
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gedit LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:5:9: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘printf’
+    5 |         printf("What is your name?");
+      |         ^~~~~~
+LabT01.c:6:20: error: ‘info’ undeclared (first use in this function)
+    6 |         scanf("%s",info[0]);
+      |                    ^~~~
+LabT01.c:6:20: note: each undeclared identifier is reported only once for each function it appears in
+LabT01.c:7:9: warning: implicit declaration of function ‘print’; did you mean ‘printf’? [-Wimplicit-function-declaration]
+    7 |         print("Name : %s", info[0]);
+      |         ^~~~~
+      |         printf
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:5:9: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘printf’
+    5 |         printf("What is your name?");
+      |         ^~~~~~
+LabT01.c:6:20: error: ‘info’ undeclared (first use in this function)
+    6 |         scanf("%s",info[0]);
+      |                    ^~~~
+LabT01.c:6:20: note: each undeclared identifier is reported only once for each function it appears in
+LabT01.c:7:9: warning: implicit declaration of function ‘print’; did you mean ‘printf’? [-Wimplicit-function-declaration]
+    7 |         print("Name : %s", info[0]);
+      |         ^~~~~
+      |         printf
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:7:9: warning: implicit declaration of function ‘print’; did you mean ‘printf’? [-Wimplicit-function-declaration]
+    7 |         print("Name : %s", name);
+      |         ^~~~~
+      |         printf
+/usr/bin/ld: /tmp/ccjI22ng.o: in function `main':
+LabT01.c:(.text+0x63): undefined reference to `print'
+collect2: error: ld returned 1 exit status
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:7:25: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+    7 |         printf("Name : %s", name);
+      |                        ~^   ~~~~
+      |                         |   |
+      |                         |   int
+      |                         char *
+      |                        %d
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+What is your name?shafkat
+Name : sshafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+What is your name?shafkat
+Name : shafkatshafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gedit LabT02.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+What is your Name? : Shafkat
+What is your Number? : 01992790820
+Name : 0Number : 01992790820shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+What is your Name? : Shafkat hasan
+What is your Number? : Name : ShafkatNumber : hasanshafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+What is your Name? : Shafkat
+What is your Number? : 019927908201
+Name : 01Number : 019927908201shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+What is your Name? : shafkat
+What is your Number? : 01914870530
+Name : 0 
+Number : 01914870530 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+What is your Name? : shafkat
+What is your Number? : Name : shafkat 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+What is your Name? : shafkat
+What is your Number? : 01992790820
+Name : 0 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+What is your Name? : shafkat
+What is your Number? : 01992790820
+Name : shafkat 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+What is your Name? : shafkat
+What is your Number? : 01992790820
+Name :  
+Number : 01992790820 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+What is your Name? : shafkat
+What is your Number? : 01992790820
+Name : shafkat 
+Number : 01992790820 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:4:24: error: array size missing in ‘date’
+    4 |         char name[50], date[], number[50];
+      |                        ^~~~
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+What is your Name? : shfakat 
+When is your Birthday? : 16 Feb 
+What is your Number? : Name : shfakat 
+Birthday : 16 
+Number : Feb 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+What is your Name? : shafkat
+When is your Birthday? : 16/02/1999
+What is your Number? : 01992790820
+Name : shafkat 
+Birthday : 16/02/1999 
+Number : 01992790820 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+What is your Name? : shafkat hasann
+When is your Birthday? : What is your Number? : q
+Name : shafkat 
+Birthday : hasann 
+Number : q 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+What is your Name? : shafkat
+When is your Birthday? : 16feb
+What is your Number? : 01992790820
+Name : shafkat 
+Birthday : 16feb 
+Number : 01992790820 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:4:21: warning: initialization of ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+    4 |         char name = "Md Shafkat Hasan"
+      |                     ^~~~~~~~~~~~~~~~~~
+LabT01.c:5:9: error: expected ‘,’ or ‘;’ before ‘char’
+    5 |         char date[100], number[100];
+      |         ^~~~
+LabT01.c:16:25: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+   16 |         printf("Name : %s \n", name);
+      |                        ~^      ~~~~
+      |                         |      |
+      |                         char * int
+      |                        %d
+LabT01.c:17:36: error: ‘date’ undeclared (first use in this function)
+   17 |         printf("Birthday : %s \n", date);
+      |                                    ^~~~
+LabT01.c:17:36: note: each undeclared identifier is reported only once for each function it appears in
+LabT01.c:18:34: error: ‘number’ undeclared (first use in this function)
+   18 |         printf("Number : %s \n", number);
+      |                                  ^~~~~~
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:4:21: warning: initialization of ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+    4 |         char name = "Md Shafkat Hasan"
+      |                     ^~~~~~~~~~~~~~~~~~
+LabT01.c:5:9: error: expected ‘,’ or ‘;’ before ‘char’
+    5 |         char date[100], number[100];
+      |         ^~~~
+LabT01.c:16:25: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+   16 |         printf("Name : %s \n", name);
+      |                        ~^      ~~~~
+      |                         |      |
+      |                         char * int
+      |                        %d
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:4:21: warning: initialization of ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+    4 |         char name = "Md Shafkat Hasan";
+      |                     ^~~~~~~~~~~~~~~~~~
+LabT01.c:16:25: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+   16 |         printf("Name : %s \n", name);
+      |                        ~^      ~~~~
+      |                         |      |
+      |                         char * int
+      |                        %d
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:4:21: warning: initialization of ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+    4 |         char name = "Md Shafkat Hasan";
+      |                     ^~~~~~~~~~~~~~~~~~
+LabT01.c:16:25: warning: format ‘%s’ expects argument of type ‘char *’, but argument 2 has type ‘int’ [-Wformat=]
+   16 |         printf("Name : %s \n", name);
+      |                        ~^      ~~~~
+      |                         |      |
+      |                         char * int
+      |                        %d
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:4:24: error: expected expression before ‘[’ token
+    4 |         char name[6] = ['S','h','a','f','k','a','t'";
+      |                        ^
+LabT01.c:4:52: warning: missing terminating " character
+    4 |         char name[6] = ['S','h','a','f','k','a','t'";
+      |                                                    ^
+LabT01.c:4:52: error: missing terminating " character
+    4 |         char name[6] = ['S','h','a','f','k','a','t'";
+      |                                                    ^~
+LabT01.c:20:1: error: expected ‘,’ or ‘;’ before ‘}’ token
+   20 | }
+      | ^
+LabT01.c:20:1: error: expected declaration or statement at end of input
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:4:24: error: expected expression before ‘[’ token
+    4 |         char name[6] = ['S','h','a','f','k','a','t'];
+      |                        ^
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:4:49: warning: excess elements in array initializer
+    4 |         char name[6] = {'S','h','a','f','k','a','t'};
+      |                                                 ^~~
+LabT01.c:4:49: note: (near initialization for ‘name’)
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+Name : Shafkat 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+Name : Shafkat 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+Name : Shafkat16Feb 
+Birthday : 16Feb 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:5:53: warning: excess elements in array initializer
+    5 |         char date[7] = {'1','6','F','-','e','b','-','9','9'};
+      |                                                     ^~~
+LabT01.c:5:53: note: (near initialization for ‘date’)
+LabT01.c:5:57: warning: excess elements in array initializer
+    5 |         char date[7] = {'1','6','F','-','e','b','-','9','9'};
+      |                                                         ^~~
+LabT01.c:5:57: note: (near initialization for ‘date’)
+LabT01.c:6:22: error: invalid digit "9" in octal constant
+    6 |         int number = 01992790820;
+      |                      ^~~~~~~~~~~
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:5:53: warning: excess elements in array initializer
+    5 |         char date[7] = {'1','6','F','-','e','b','-','9','9'};
+      |                                                     ^~~
+LabT01.c:5:53: note: (near initialization for ‘date’)
+LabT01.c:5:57: warning: excess elements in array initializer
+    5 |         char date[7] = {'1','6','F','-','e','b','-','9','9'};
+      |                                                         ^~~
+LabT01.c:5:57: note: (near initialization for ‘date’)
+LabT01.c:6:22: error: invalid digit "9" in octal constant
+    6 |         int number = 01992790820;
+      |                      ^~~~~~~~~~~
+LabT01.c:19:27: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Wformat=]
+   19 |         printf("Number : %d \n", &number);
+      |                          ~^      ~~~~~~~
+      |                           |      |
+      |                           int    int *
+      |                          %ls
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:5:53: warning: excess elements in array initializer
+    5 |         char date[7] = {'1','6','F','-','e','b','-','9','9'};
+      |                                                     ^~~
+LabT01.c:5:53: note: (near initialization for ‘date’)
+LabT01.c:5:57: warning: excess elements in array initializer
+    5 |         char date[7] = {'1','6','F','-','e','b','-','9','9'};
+      |                                                         ^~~
+LabT01.c:5:57: note: (near initialization for ‘date’)
+LabT01.c:6:22: error: invalid digit "9" in octal constant
+    6 |         int number = 01992790820;
+      |                      ^~~~~~~~~~~
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:6:22: error: invalid digit "9" in octal constant
+    6 |         int number = 01992790820;
+      |                      ^~~~~~~~~~~
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+LabT01.c: In function ‘main’:
+LabT01.c:6:22: error: invalid digit "9" in octal constant
+    6 |         int number = 01992790820;
+      |                      ^~~~~~~~~~~
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+Name : Shafkat16F-eb-99 
+Birthday : 16F-eb-99 
+Number : 1992790820 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+Name : Shafkat16-Feb-99 
+Birthday : 16-Feb-99 
+Number : 1992790820 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+Name : Shafkat16-Feb-99 
+Birthday : 16-Feb-99 
+Number : 1992790820 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+Name : Shafkat 
+Birthday : 16-Feb-99 
+Number : 1992790820 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+Name : Shafkat 
+Birthday : 16-Feb-99 
+Number : 1992790820 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+Name : Shafkat 
+Birthday : 16-Feb-99 
+Number : 1992790820 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+Name : Md Shafkat Shafkat 
+Birthday : 16-Feb-99 
+Number : 1992790820 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+Name : Md Shafkat Shafkat 
+Birthday : 16-Feb-99 
+Number : 1992790820 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+Name : Md Shafkat Hasan 
+Birthday : 16-Feb-99 
+Number : 1992790820 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+Name : Md Shafkat Hasan 
+Birthday : 16-Feb-99 
+Number : 1992790820 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt01 LabT01.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt01
+Name : Md Shafkat Hasan 
+Birthday : 16-Feb-99 
+Number : 1992790820 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gcc -o lt02 LabT02.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ./lt02
+Enter Height : 9
+Enter Width : 9
+Area of a rectengula: 81
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ gedit LabT03.c
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ touch Lab01Task.txt
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ Lab01Task.txt
+Lab01Task.txt: command not found
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ^C
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ 
+

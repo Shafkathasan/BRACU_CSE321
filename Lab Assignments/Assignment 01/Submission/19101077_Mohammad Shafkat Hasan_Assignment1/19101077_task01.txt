@@ -1,0 +1,170 @@
+Mohammad Shafkat Hasan
+ID: 19101077
+CSE321_Section-04
+Assignment-01
+
+=========task1(a)==========
+
+shafkat-lpc@shafkat-LPC:~$ uname
+Linux
+shafkat-lpc@shafkat-LPC:~$ whoami
+shafkat-lpc
+shafkat-lpc@shafkat-LPC:~$ who
+shafkat-lpc tty2         2023-02-19 15:58 (tty2)
+shafkat-lpc@shafkat-LPC:~$ pwd
+/home/shafkat-lpc
+shafkat-lpc@shafkat-LPC:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+shafkat-lpc@shafkat-LPC:~$ cd Desktop
+shafkat-lpc@shafkat-LPC:~/Desktop$ ls
+Tasks
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ touch 19101077_1.txt 19101077_2.txt 19101077_3.txt 19101077_4.txt 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+19101077_1.txt  19101077_2.txt  19101077_3.txt  19101077_4.txt
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ mkdir shafkat1 shafkat2
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+19101077_1.txt  19101077_2.txt  19101077_3.txt  19101077_4.txt  shafkat1  shafkat2
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ mv 19101077_1.txt 19101077_2.txt 19101077_3.txt  shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+19101077_4.txt  shafkat1  shafkat2
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ cd shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat1$ pwd
+/home/shafkat-lpc/Desktop/Tasks/shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat1$ cp 19101077_1.txt 19101077_2.txt ~/Desktop/Tasks/shafkat2
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat1$ cd ..
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ mkdir shafkat3
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+19101077_4.txt  shafkat1  shafkat2  shafkat3
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ cp -r shafkat1 shafkat3
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ cd shafkat3
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ ls -a
+.  ..  shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ ls -all
+total 12
+drwxrwxr-x 3 shafkat-lpc shafkat-lpc 4096 Feb 19 17:15 .
+drwxrwxr-x 5 shafkat-lpc shafkat-lpc 4096 Feb 19 17:13 ..
+drwxrwxr-x 2 shafkat-lpc shafkat-lpc 4096 Feb 19 17:15 shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ ls -A
+shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ ls -all
+total 12
+drwxrwxr-x 3 shafkat-lpc shafkat-lpc 4096 Feb 19 17:15 .
+drwxrwxr-x 5 shafkat-lpc shafkat-lpc 4096 Feb 19 17:13 ..
+drwxrwxr-x 2 shafkat-lpc shafkat-lpc 4096 Feb 19 17:15 shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ ls -l
+total 4
+drwxrwxr-x 2 shafkat-lpc shafkat-lpc 4096 Feb 19 17:15 shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ chmod 755 shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ ls -l
+total 4
+drwxr-xr-x 2 shafkat-lpc shafkat-lpc 4096 Feb 19 17:15 shafkat1
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks/shafkat3$ cd ..
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+19101077_4.txt  shafkat1  shafkat2  shafkat3
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls -a
+.  ..  19101077_4.txt  shafkat1  shafkat2  shafkat3
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ sudo mv shafkat3 /
+[sudo] password for shafkat-lpc: 
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls -a
+.  ..  19101077_4.txt  shafkat1  shafkat2
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ cd /
+shafkat-lpc@shafkat-LPC:/$ ls -a
+.   bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   shafkat3  srv       sys        tmp  var
+..  boot  dev    home  lib32  libx32  media       opt  root  sbin  snap      swapfile  timeshift  usr
+shafkat-lpc@shafkat-LPC:/$ cd ~
+shafkat-lpc@shafkat-LPC:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+shafkat-lpc@shafkat-LPC:~$ cd Desktop/Tasks
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls -a
+.  ..  19101077_4.txt  shafkat1  shafkat2
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ rm -r *
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls -a
+.  ..
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ 
+
+=========task1(b)==========
+
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ pwd
+/home/shafkat-lpc/Desktop/Tasks
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ cat course.txt
+cat: course.txt: No such file or directory
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ cat > course.txt
+Course ID:
+ANT101, CSE321, CSE421
+
+Course Name:
+1. INTRODUCTION TO ANTHROPOLOGY
+2. OPERATING SYSTEMS
+3. COMPUTER NETWORKS
+
+Section: ANT101[07], CSE321[04], CSE421[02]
+^Z
+[3]+  Stopped                 cat > course.txt
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ grap -n 'CSE' course.txt
+Command 'grap' not found, but can be installed with:
+sudo apt install grap
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ grep -n 'CSE' course.txt
+2:ANT101, CSE321, CSE421
+9:Section: ANT101[07], CSE321[04], CSE421[02]
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ 
+
+=========task1(c)==========
+
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ pwd
+/home/shafkat-lpc/Desktop/Tasks
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ cd /
+shafkat-lpc@shafkat-LPC:/$ pwd
+/
+shafkat-lpc@shafkat-LPC:/$ ls -a
+.   bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   shafkat3  srv       sys        tmp  var
+..  boot  dev    home  lib32  libx32  media       opt  root  sbin  snap      swapfile  timeshift  usr
+shafkat-lpc@shafkat-LPC:/$ 
+
+=========task1(d)==========
+
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ pwd
+/home/shafkat-lpc/Desktop/Tasks
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ ls
+a.txt
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ sed -n -e 5,17p a.txt
+The dog barked at the mailman as he walked by.
+He spent hours reading books in the library.
+The city skyline looked stunning at night.
+The children giggled as they played in the park.
+I can't believe it's already February.
+She's an excellent cook and her food always tastes delicious.
+The flowers in the garden are starting to bloom.
+The train arrived at the station right on time.
+The movie we watched last night was really entertaining.
+The snow was so deep that it covered the entire car.
+The band played their hit song to a packed stadium.
+The store was out of stock of the item I was looking for.
+The old man sat quietly on the bench, watching the world go by.
+shafkat-lpc@shafkat-LPC:~/Desktop/Tasks$ 
+
+=========file (a)==========
+
+The sun is shining brightly today.
+I love the sound of the ocean waves crashing against the shore.
+She always wears a smile on her face.
+The aroma of fresh baked bread fills the kitchen.
+The dog barked at the mailman as he walked by.
+He spent hours reading books in the library.
+The city skyline looked stunning at night.
+The children giggled as they played in the park.
+I can't believe it's already February.
+She's an excellent cook and her food always tastes delicious.
+The flowers in the garden are starting to bloom.
+The train arrived at the station right on time.
+The movie we watched last night was really entertaining.
+The snow was so deep that it covered the entire car.
+The band played their hit song to a packed stadium.
+The store was out of stock of the item I was looking for.
+The old man sat quietly on the bench, watching the world go by.
+The airplane took off smoothly and soared into the sky.
+The basketball game was intense and went into overtime.
+The stars twinkled in the clear night sky.
+
+=========The End==========
